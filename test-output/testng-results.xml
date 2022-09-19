@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-19T16:28:06 IST" name="Default suite" finished-at="2022-09-19T16:28:17 IST" duration-ms="10084">
+    <groups>
+    </groups>
+    <test started-at="2022-09-19T16:28:06 IST" name="Default test" finished-at="2022-09-19T16:28:17 IST" duration-ms="10084">
+      <class name="Order">
+        <test-method signature="odr()[pri:0, instance:Order@3c7f66c4]" started-at="2022-09-19T16:28:07 IST" name="odr" finished-at="2022-09-19T16:28:17 IST" duration-ms="10012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- odr -->
+      </class> <!-- Order -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
