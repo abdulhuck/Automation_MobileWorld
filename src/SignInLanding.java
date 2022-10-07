@@ -1,20 +1,18 @@
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SignInPackage {
-
+public class SignInLanding {
 	WebDriver driver;
 
-	public SignInPackage(WebDriver driver) {
+	public SignInLanding(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(xpath = "//button[.='SIGN IN']")
-	WebElement sign;
+	WebElement signin;
 	@FindBy(xpath = "//input[@id='username']")
 	WebElement username;
 	@FindBy(xpath = "//input[@id='password']")
@@ -25,12 +23,12 @@ public class SignInPackage {
 	WebElement signuplink;
 
 	public void goTo() {
-		driver.get("https://mobileworld.banyanpro.com/");
+		driver.get("https://qualicoach.org/mwapp/index.html");
 		driver.manage().window().maximize();
 	}
 
 	public WebElement signinbutton() {
-		return sign;
+		return signin;
 	}
 
 	public WebElement uname() {
@@ -48,6 +46,11 @@ public class SignInPackage {
 		// TODO Auto-generated method stub
 		return signuplink;
 	}
+	public void closeWindow() {
+		driver.quit();
+	}
 
 
 }
+
+
